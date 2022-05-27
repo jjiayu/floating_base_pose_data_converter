@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Load the Vicon message converter needed for the localization node -->
+  <!-- <rosparam command="load" file="$(find robot_vicon_state_estimator)/config/$(arg robot)/vicon.yaml"/> -->
+  <node pkg="floating_base_pose_data_converter" type="floating_base_pose_data_converter" name="floating_base_pose_data_converter" output="screen">
+    <!-- <param name="vicon_topic" value="$(arg vicon_topic)"/> -->
+  </node>
+</launch>
